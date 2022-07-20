@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CDN olarak vue.js eklemek altta yapılıyor -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- normalde burası başlaangıçta yapılmasını sağlıyor changeTitle ın ama lifecycle olayları yüzünden methods ile kullanılırsa her zaman değişir gibi çalışır. -->
+      {{changeTitle('Burası başlangıçta değişmiş hali')}}
+      <h1>{{ title }}</h1>
+      <p>{{ content }}</p>
+      <!-- <a v-bind:href=url> google için tıklayınız</a> -->
+      <a
+        :target="eduflow.target"
+        v-bind:href="eduflow.url"
+        v-bind:alt="eduflow.alt"
+        v-bind:kablosuzkedi="owner"
+      >
+        <!-- v-bind yerine :target gibi de kullanabiliriz. -->
+        {{eduflow.title}}
+      </a>
+      <br />
+      <br />
+      <button v-on:click="changeTitle('Bu birinci buton')">
+        Title Değiştir.
+      </button>
+      <button v-on:click="changeTitle('bu ikinci buton')">
+        Title2 Değiştir.
+      </button>
+      <!-- Burada v-on: ile @ aynı işlevleri yerine getirmektedir. -->
+      <div
+        @mousemove="updateCoords($event, 'Cordinatlar')"
+        class="box"
+        @click="changeTitle('box üzerinden gelen')"
+      ></div>
+      <span>{{coords.x}} , {{coords.y}}</span>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

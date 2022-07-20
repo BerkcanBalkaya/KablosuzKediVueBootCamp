@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Style Binding</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      {{border}}
+      <!-- İnput a verdiğimiz değer v-model olduğundan bgColoru otomatik olarak değiştiriyor ve altta div içerisinde :style ile stil koşulu belirttiğimiz için ne yazarsak onun değeri geliyor. -->
+      <input type="text" v-model="bgColor" />
+      <button @click="showBorder = !showBorder">Border Ekle/Ekleme</button>
+      <!-- Burada redBg proptertisinin değeri değiştiriliyor -->
+      <button @click="redBg = !redBg">RedBG Ekle/Ekleme</button>
+      <!-- Burada da :class içerisinde eklenecek olan class için propertilerdeki true false değerlerine bakılıyor ve ona göre ekleniyor. Aynı zamanda alttaki yapı sadece class için var -->
+      <!-- <div class="box" :class="{border : showBorder, red: redBg }"></div> -->
+      <!-- Aynı zamanda yukarıdaki gibi uzun uzun koşul yazmak mantıklı değil onun yerine şu kullanılabilir -->
+      <div
+        class="box"
+        :class="boxClasses"
+        :style="{background : bgColor }"
+      ></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- :class ile data içerisinde class ekleyebiliyoruz ya da :class="['border','blue',]" gibi de yazabiliriz -->
+<!-- koşula bağlı olarak yazmak istersek  -->

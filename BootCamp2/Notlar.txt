@@ -1,0 +1,28 @@
+Component
+    -Tekrar edilen bölümlere verilen isimlerdir.
+    -GUI parçaları, kendi içerisinde servis bağlantısı bulunduran GUI parçaları, Template yapısına uygun projelerde templerler.
+
+    -options nedir
+
+ESlint
+    -Kodlaramız için yazım template'i ayarlamak gibi bir şey
+
+Vue uzantılı dosyalar single file component dosyalarıdır (SFC)
+
+vue2 v vue3
+    -vue2 de template olmalı vue3 de olmasa da olur 
+    -template script ve style sırası önemli değil ama script yukarda olsun template altta olsun diyenler var
+    -vue2 de template rootta 1 tane element olmalı ama 3 de bu o kadar önemli değil
+
+@ aslında src anlamına geliyor yani @/.... = src/...... gibi
+
+Main içerisinde import edersek global registering component içerisine yaparsak local registering
+
+Componentler arasındaki veri iletişimi
+    -parent-child veya child-parent arasında olabilir
+    -props modeli parenttan childe custom event ise childdan parenta
+
+referans tipli verilerde child parent gibi yerlerde childda değişse parentta da değişir bildiğin referans mantığı
+
+componentlerde çok seviyeli parent-child ilişkileri olması durumunda provide ve inject yaklaşımı kullanılabilir.
+    -Statik olarak gönderirsen problem çıkmayabiliyor ama eğer dinamik daha sonra değişecek data göndericek olursak
