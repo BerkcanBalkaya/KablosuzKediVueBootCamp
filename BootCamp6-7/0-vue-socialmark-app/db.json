@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "username": "berkooo",
+      "fullname": "selam",
+      "password": "U2FsdGVkX1/kiI6H4uzTITq4MsHTtQb/3bP6g2cLBNE=",
+      "id": 1
+    },
+    {
+      "username": "dsfasdf",
+      "fullname": "sdfasdf",
+      "password": "U2FsdGVkX1+jZhNzJmFQ3tMB8oH17a2ev5m1mvbRtz0=",
+      "id": 2
+    },
+    {
+      "username": "beko",
+      "fullname": "berkcan",
+      "password": "U2FsdGVkX1/ehuS+xsl62iO9YQcH0iu/Yzb2dxnH15E=",
+      "id": 3
+    },
+    {
+      "username": "simo",
+      "fullname": "deneme",
+      "password": "3c40facc35474d2b7812e2e2955c1794da550d69",
+      "id": 4,
+      "likes": [
+        5,
+        4,
+        6
+      ],
+      "bookmarks": [
+        7,
+        8,
+        6
+      ]
+    },
+    {
+      "username": "simos",
+      "fullname": "berkcan",
+      "password": "fbb666ba934893c54d94d813a7c1645bdb6eaffe",
+      "id": 5,
+      "likes": [
+        8
+      ]
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "bensen",
+      "url": "se sa",
+      "categoryId": 1,
+      "description": "iş bu adamım",
+      "userId": 4,
+      "created_at": "2022-07-24T08:20:22.729Z",
+      "id": 4
+    },
+    {
+      "title": "Frondend",
+      "url": "frondeeeeeeeeend",
+      "categoryId": 3,
+      "description": "müthişsin",
+      "userId": 4,
+      "created_at": "2022-07-24T08:55:36.706Z",
+      "id": 5
+    },
+    {
+      "title": "güzel oynlar",
+      "url": "https:.",
+      "categoryId": 6,
+      "description": "Oyun oyna işte",
+      "userId": 4,
+      "created_at": "2022-07-24T09:11:49.497Z",
+      "id": 6
+    },
+    {
+      "title": "Berkcan Camp Günlükleri",
+      "url": "wip",
+      "categoryId": 5,
+      "description": "hellooooooooooo",
+      "userId": 5,
+      "created_at": "2022-07-24T10:06:06.488Z",
+      "id": 7
+    },
+    {
+      "title": "vue kamp",
+      "url": "kablosuzkedi",
+      "categoryId": 1,
+      "description": "yoruldum",
+      "userId": 5,
+      "created_at": "2022-07-24T12:38:15.439Z",
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend.js",
+      "id": 3
+    },
+    {
+      "name": "Backend.js",
+      "id": 4
+    },
+    {
+      "name": "Cloud.js",
+      "id": 5
+    },
+    {
+      "name": "Sosyal Yaşam",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "bookmarks": [
+    {
+      "title": "berkcan",
+      "url": "https://www.google.com",
+      "description": "Bilgidiğin google geçişi için kullanılacak işte",
+      "id": 1
+    },
+    {
+      "title": "batuhan",
+      "url": "https://www.facebook.com",
+      "description": "facebook tıkla git",
+      "id": 3
+    }
+  ]
+}

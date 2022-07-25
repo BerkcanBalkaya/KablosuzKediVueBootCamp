@@ -1,8 +1,9 @@
 export default {
+  namespaced: true,
   state: {
     contactName: "puresol",
     contactAddress: "Almanya",
-    propertyList: [],
+    // propertyList: [],
   },
   mutations: {
     setName(state, name) {
